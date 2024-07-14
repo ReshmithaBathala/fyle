@@ -1,0 +1,382 @@
+/* Custom CSS */
+
+/* Hero Section */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+.award-winning-text {
+  text-align: left;
+  font: normal normal 600 30px/110px Roboto;
+  letter-spacing: 0px;
+  color: #ff3147;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.digital-marketing-agency {
+  text-align: left;
+  font: normal normal bold 60px/80px Roboto;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.award-winning-description {
+  text-align: left;
+  font: normal normal normal 16px/30px Poppins;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+}
+.hero-image {
+  top: 100px;
+  left: 1058px;
+  width: 487px;
+  height: 650px;
+  opacity: 1;
+  padding: 20px;
+}
+.contactus-button-container {
+  height: 40px;
+  width: 150px;
+}
+.whatwedo-container {
+  background-color: #fafafa;
+  opacity: 1;
+  margin-bottom: 20px;
+}
+.what-we-do-text {
+  color: #ff3147;
+  opacity: 1;
+  font-family: 20px;
+}
+.what-we-do-p {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 30px;
+  font-weight: bold;
+}
+.what-we-do-content {
+  color: #000000;
+  font-family: "Roboto";
+  font-size: 17px;
+}
+
+.carousel {
+  /* width: 80%; */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  /* border: 1px solid #ccc; */
+  background-color: #fff;
+  overflow: hidden;
+}
+.slides {
+  display: flex;
+  transition: margin-left 0.5s;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: all 0.5 ease-in-out;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  min-width: 33.3333%;
+  transition: opacity 0.5s ease;
+  position: relative;
+  margin: 20px;
+  width: 370px;
+  height: 550px;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.slide1 {
+  width: 492px; /* Same width as slide */
+  height: 570px; /* Same height as slide */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  padding-top: 80px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  text-align: center;
+  flex-shrink: 2;
+}
+
+.slide:hover .slide1 {
+  display: block;
+  opacity: 0.8;
+}
+
+.navigation-manual {
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn {
+  border: 2px solid #605f5f;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+
+.manual-btn:not(:last-child) {
+  margin-right: 10px;
+}
+
+.manual-btn:hover {
+  background: #403e3e;
+}
+
+#radio1:checked ~ .slides {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .slides {
+  margin-left: -100%;
+}
+
+#radio3:checked ~ .slides {
+  margin-left: -200%;
+}
+
+#radio1:checked ~ .navigation-manual .manual-btn:nth-child(1),
+#radio2:checked ~ .navigation-manual .manual-btn:nth-child(2),
+#radio3:checked ~ .navigation-manual .manual-btn:nth-child(3) {
+  color: red;
+}
+
+.navigation-auto {
+  display: none;
+}
+.web-development-container {
+  background-color: #ff3147;
+  position: absolute;
+  display: none;
+}
+
+.slide:hover + .slide1 {
+  display: block;
+}
+.icon {
+  height: 57px;
+  width: 57px;
+  padding: 10px;
+}
+.header {
+  font-size: 20px;
+  color: #ffffff;
+}
+.paragraph {
+  font-size: 15px;
+  color: #ffffff;
+}
+.read-more {
+  background-color: #f4f4f4;
+  outline: none;
+  border: 0px solid transparent;
+  border-radius: 2px;
+  color: #ff3147;
+  font-size: 15px;
+  height: 40px;
+  cursor: pointer;
+  width: 150px;
+}
+
+.why-chooseus-text {
+  color: #ff3147;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.why-chooseus-heading {
+  color: #000000;
+  font-size: 30px;
+  font-family: "Roboto";
+}
+
+.choose-us-sub-container {
+  height: 180px;
+  width: 256px;
+  text-align: left;
+  margin-top: 10px;
+}
+.choose-icons {
+  height: 50px;
+  width: 50px;
+}
+.choose-us-1 {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bold;
+}
+.choose-us-2 {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 300;
+}
+.best-image {
+  height: 567px;
+  width: 770px;
+}
+.bestchoose-option {
+  background-color: #f6f6f6;
+  height: 189px;
+  width: 370px;
+  text-align: center;
+  padding-top: 20px;
+}
+.choose-button {
+  border: 0px solid transparent;
+  margin-left: 20px;
+  outline: none;
+  height: 189px;
+  width: 370px;
+  background-color: transparent;
+}
+.bestchoose-option-selected {
+  background-color: #ff3147;
+  height: 189px;
+  width: 370px;
+  text-align: center;
+  padding-top: 20px;
+}
+.choose-us-selected {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+}
+.choose-us-selected {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+}
+.company-growth-container {
+  background-color: #fafafa;
+  height: 360px;
+}
+.growth-icon {
+  height: 34px;
+  width: 39px;
+}
+.growth-number {
+  color: #000000;
+  font-size: 30px;
+}
+.growth-content {
+  color: #000000;
+  font-size: 15px;
+}
+.growth-sub-container {
+  height: 140px;
+  width: 250px;
+  transition: all 0.3s ease;
+  padding: 10px;
+}
+.growth-sub-container:hover {
+  background-color: #f9f2f2;
+  border: 0px solid #eee5e5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+.about-us-text {
+  color: #000000;
+  font-size: 17px;
+  font-family: "Roboto";
+}
+.about-us-p {
+  color: #ff3147;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.about-us-span {
+  color: #808080;
+  font-size: 20px;
+  font-family: "Roboto";
+}
+.footer-container {
+  height: 250px;
+  background-color: #ff3147;
+}
+.footer-group {
+  height: 20px;
+}
+
+.contact-section {
+  width: 450px;
+  height: 362px;
+  border: 1px solid #f1f1f1;
+  border-radius: 5px;
+  flex-shrink: 2;
+}
+.Talk-to-us {
+  font-size: 30px;
+  font-weight: bold;
+  color: #2d3142;
+}
+.input-text {
+  border-top: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-left: 0px solid transparent;
+  border-bottom: 1px solid #6f718f99;
+  outline: none;
+  width: 150px;
+  margin-right: 10px;
+}
+.form-container {
+  width: 450px;
+}
+.sub-groups {
+  width: 450px;
+}
+.modal-backdrop.show {
+  opacity: 0.5; /* Adjust opacity as needed */
+  background-color: #000; /* Background color of the overlay */
+}
+
+.modal-content input.form-control,
+.modal-content textarea.form-control {
+  border: none;
+  border-bottom: 1px solid #ccc; /* Bottom border style */
+  border-radius: 0; /* Remove border radius if applied by default */
+}
+
+/* Styling for the checkbox label */
+.modal-content .form-check-label {
+  padding-left: 0; /* Adjust padding as needed */
+}
+
+.input-color {
+  color: #ff3366;
+}
+.button-contact {
+  background-color: #ff3366;
+  height: 40px;
+  width: 150px;
+  outline: none;
+  border: 0px solid transparent;
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-top: 10px;
+}
